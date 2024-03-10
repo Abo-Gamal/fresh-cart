@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product{
+    transition: box-shadow 0.5s;
+}
+.product:hover
+{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border: solid 1px var(--main-color);
+    border-radius: 10px;
+}
+.product .btn 
+{
+    transition: transform 0.5s , opacity 0.7s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+    color: var(--light-color);
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.text-main-light
+{
+    color: var(--light-color);
+}
+.tm:hover
+{
+    color: var(--main-color);
+    transition: color 0.3s;
+}
+.ii:hover{
+    color: var(--light-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.btn-main{
+  background-color: var(--main-color) !important;
+}
+.btn-main-light{
+  color: var(--light-color) !important;
+}
+.brdr{
+    border: 1px var(--main-color) solid;
+}
+.off{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999999;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: center;
+}
+.brand{
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+}
+.brand:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border: solid 1px var(--main-color);
+}
+.rd{
+    color: red;
+}
+
+.count{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: #0aad0a;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    color: var(--light-color);
+}
+.colch{
+    color: black;
+}
