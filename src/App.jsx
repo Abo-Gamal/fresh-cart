@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Component/Layout/Layout';
 import Categories from './Component/Categories/Categories';
 import Register from './Component/Register/Register';
@@ -50,10 +50,8 @@ export default function App() {
 
 
   return <>
-          <Router basename="/fresh-cart">
-            <RouterProvider router={routers}></RouterProvider>
+            <RouterProvider basename="/fresh-cart" router={routers}></RouterProvider>
             <Toaster/>
-          </Router>
         </>
 }
 
