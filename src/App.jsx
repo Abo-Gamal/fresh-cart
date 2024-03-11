@@ -50,7 +50,7 @@ export default function App() {
 
 
   return <>
-            <RouterProvider router={routers}></RouterProvider>
+            <RouterProvider basename="/fresh-cart" router={routers}></RouterProvider>
             <Toaster/>
         </>
 }
